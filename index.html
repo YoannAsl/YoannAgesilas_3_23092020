@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0c79a82de.js" crossorigin="anonymous"></script>
 </head>
@@ -13,33 +13,35 @@
         <img src="images/logo/ohmyfood@2x.svg">
     </header>
 
-    <div id="location">
+    <section id="location">
         <i class="fas fa-map-marker-alt"></i>
         <p>Paris, Belleville</p>
-    </div>
+    </section>
 
-    <div id="container1">
+    <section id="top_text">
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button type="button">Explorez nos restaurants</button>
-    </div>
+    </section>
 
-    <div id="fonctionnement">
+    <section id="fonctionnement">
         <h2>Fonctionnement</h2>
-        <button type="button"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
+        <button type="button" ><i class="fas fa-mobile-alt"></i><span class="bold">Choisissez un restaurant</span></button>
         <button type="button"><i class="fas fa-list-ul"></i>Composez votre menu</button>
-        <button type="button"><i class="fas fa-store"></i>Dégustez au restaurant</button>
-    </div>
-    <div>
-        
-    </div>
+        <button type="button" class="btn--selected"><i class="fas fa-store"></i>Dégustez au restaurant</button>
+    </section>
+
     <div id="restaurants">
         <h2>Restaurants</h2>
         <a class="home_card" href="./menu1.html">
-            <img id="test" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-            <p>La palette du goût</p>
-            <p>Ménilmontant</p>
-            <i class="far fa-heart"></i>
+            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+            <div class="card_descr">
+                <div class="card_text">
+                    <p class="bold">La palette du goût</p>
+                    <p>Ménilmontant</p>                    
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
         </a>
     </div>
 

@@ -1,0 +1,114 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+$grey:  rgb(234, 234, 234);
+$lightgrey: rgb(246, 246, 246);
+$darkgrey: rgb(53, 53, 53);
+$purple: #9356dc;
+$pink: #ff79da;
+$cyan: #99E2D0;
+$btn-selected: rgb(245, 237, 255);
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    img {
+        height: 30px;
+    }
+}
+
+#location {
+    background-color: $grey;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#top_text {
+    background-color: $lightgrey;
+    text-align: center;
+}
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    button {
+        background-color: $lightgrey;
+        height: 74px;
+        width: 90%;
+        margin: 25px auto;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.24);
+        font-size: 100%;
+    }
+    .btn--selected {
+        background-color: $btn-selected;
+        i {
+            color: $purple;
+        }
+    }
+}
+
+#restaurants {
+    background-color: $lightgrey;
+    padding: 60px 0;
+    h2 {
+        margin-left: 5%;
+    }
+    a { 
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: white;
+        width: 90%;
+        border-radius: 25px;
+        box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.1);
+        text-decoration: none;
+        color: black;
+        img {
+            height: 174px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            object-fit: cover;
+        }
+        .card_descr {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 8% 20px 4%;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#menu {
+    background-color: $lightgrey;
+    .menu_card {
+        background-color: white;
+    }
+}
+
+footer {
+    background-color: $darkgrey;
+    color: white;
+}
