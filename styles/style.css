@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 body {
   margin: 0;
 }
@@ -41,11 +45,24 @@ header img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  font-weight: bold;
 }
 
 #top_text {
   background-color: #f6f6f6;
   text-align: center;
+  padding: 44px 5% 57px 5%;
+}
+
+#top_text button {
+  height: 50px;
+  width: 58%;
+  color: white;
+  background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 #fonctionnement {
@@ -56,18 +73,29 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 52px 0 48px 0;
+}
+
+#fonctionnement h2 {
+  margin-left: 5%;
 }
 
 #fonctionnement button {
   background-color: #f6f6f6;
   height: 74px;
   width: 90%;
-  margin: 25px auto;
+  margin: 12px auto;
   border: none;
   border-radius: 25px;
   -webkit-box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.24);
           box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.24);
   font-size: 100%;
+  font-weight: bold;
+}
+
+#fonctionnement button i {
+  color: grey;
+  font-size: 110%;
 }
 
 #fonctionnement .btn--selected {
@@ -95,20 +123,41 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   margin: 0 auto;
   background-color: white;
   width: 90%;
-  border-radius: 25px;
+  border-radius: 20px;
   -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: black;
 }
 
+#restaurants a .new_tag {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  width: 24%;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
 #restaurants a img {
   height: 174px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -125,6 +174,14 @@ header img {
 
 #restaurants a .card_descr p {
   margin: 0;
+}
+
+#restaurants a .card_descr i {
+  font-size: 150%;
+}
+
+#restaurants a .card_descr i:hover {
+  color: blue;
 }
 
 #menu {
