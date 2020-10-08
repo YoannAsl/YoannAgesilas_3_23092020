@@ -26,9 +26,9 @@
 
     <section id="fonctionnement">
         <h2>Fonctionnement</h2>
-        <button type="button" ><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
-        <button type="button"><i class="fas fa-list-ul"></i>Composez votre menu</button>
-        <button type="button" class="btn--selected"><i class="fas fa-store"></i>Dégustez au restaurant</button>
+        <button type="button" ><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
+        <button type="button"><span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</button>
+        <button type="button" class="btn--selected"><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</button>
     </section>
 
     <div id="restaurants">
@@ -41,15 +41,19 @@
                     <p class="bold">La palette du goût</p>
                     <p>Ménilmontant</p>                    
                 </div>
-                <i class="fas fa-heart"></i>
+                <div class="hearts_container">
+                    <i class="far fa-heart heart_empty"></i>
+                    <i class="fas fa-heart heart_full"></i>    
+                </div>
+
             </div>
         </a>
     </div>
 
     <footer>
         <img src="images/logo/ohmyfood@2x.svg">
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+        <p><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</p>
+        <p><i class="fas fa-hands-helping fa-fw"></i>Devenir partenaire</p>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>
