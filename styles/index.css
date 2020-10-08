@@ -217,14 +217,6 @@ header img {
   display: block;
 }
 
-#menu {
-  background-color: #f6f6f6;
-}
-
-#menu .menu_card {
-  background-color: white;
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -234,4 +226,4 @@ footer {
 footer i {
   margin-right: 10px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
