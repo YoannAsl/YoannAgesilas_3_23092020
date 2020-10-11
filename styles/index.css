@@ -213,8 +213,26 @@ header img {
   display: none;
 }
 
-#restaurants a .card_descr .hearts_container:hover .heart_full {
+#restaurants a .card_descr .hearts_container:hover .heart_full, #restaurants a .card_descr .hearts_container:hover .heart_full:before {
   display: block;
+  -webkit-animation: fillup 1000ms;
+          animation: fillup 1000ms;
+}
+
+@-webkit-keyframes fillup {
+  100% {
+    background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes fillup {
+  100% {
+    background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 footer {

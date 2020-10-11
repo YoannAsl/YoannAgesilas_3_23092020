@@ -150,8 +150,17 @@ header {
             .hearts_container:hover .heart_empty {
                 display: none;
             }
-            .hearts_container:hover .heart_full {
+            .hearts_container:hover .heart_full, .hearts_container:hover .heart_full:before {
                 display: block;
+                animation: fillup 1000ms;
+                @keyframes fillup {
+                    100% {
+                        background: linear-gradient(170deg, $pink 20%, $purple 100%);
+                        -webkit-background-clip: text;
+                        color: transparent;
+                    }
+                }
+
             }
         }
     }
