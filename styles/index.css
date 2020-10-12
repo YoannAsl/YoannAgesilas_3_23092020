@@ -25,12 +25,43 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 63px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 header img {
   height: 30px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 #location {
@@ -60,11 +91,17 @@ header img {
   height: 50px;
   width: 58%;
   color: white;
-  background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
+  background: linear-gradient(178deg, #ff79da 20%, #9356dc 100%);
   border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+#top_text button:hover {
+  background: linear-gradient(178deg, #ff88de 20%, #9b63df 100%);
+  -webkit-box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 #fonctionnement {
@@ -96,6 +133,12 @@ header img {
   position: relative;
 }
 
+#fonctionnement button:hover {
+  background: #f9f9f9;
+  -webkit-box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.24);
+}
+
 #fonctionnement button span {
   position: absolute;
   left: -12px;
@@ -125,6 +168,12 @@ header img {
 
 #fonctionnement .btn--selected {
   background-color: #f5edff;
+}
+
+#fonctionnement .btn--selected:hover {
+  background: #f8f2ff;
+  -webkit-box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.24);
 }
 
 #fonctionnement .btn--selected i {
