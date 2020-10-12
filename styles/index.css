@@ -207,6 +207,11 @@ header img {
 
 #restaurants a .card_descr .heart_full {
   display: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da 10%, #9356dc 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
 }
 
 #restaurants a .card_descr .hearts_container:hover .heart_empty {
@@ -215,23 +220,28 @@ header img {
 
 #restaurants a .card_descr .hearts_container:hover .heart_full, #restaurants a .card_descr .hearts_container:hover .heart_full:before {
   display: block;
-  -webkit-animation: fillup 1000ms;
-          animation: fillup 1000ms;
+  -webkit-animation: fillup 1250ms;
+          animation: fillup 1250ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 200% 200%;
 }
 
 @-webkit-keyframes fillup {
+  0% {
+    background-position: 0 -100%;
+  }
   100% {
-    background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+    background-position: 0% 50%;
   }
 }
 
 @keyframes fillup {
+  0% {
+    background-position: 0 -100%;
+  }
   100% {
-    background: linear-gradient(170deg, #ff79da 20%, #9356dc 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+    background-position: 0% 50%;
   }
 }
 
