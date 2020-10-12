@@ -52,7 +52,35 @@ header {
     border-top-left-radius: 35px;
     padding: 30px 5% 70px 5%;
     h2 {
+        display: flex;
         font-size: 1.7em;
+        .hearts_container {
+            margin-left: 33px
+        }
+        .heart_full {
+            display: none;
+            background: linear-gradient($pink 10%, $purple 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            background-repeat: no-repeat;
+        }
+        .hearts_container:hover .heart_empty {
+            display: none;
+        }
+        .hearts_container:hover .heart_full, .hearts_container:hover .heart_full:before {
+            display: block;
+            animation: fillup 1250ms;
+            animation-fill-mode: forwards;
+            background-size: 200% 200%;
+            @keyframes fillup {
+                0% {
+                    background-position: 0 -100%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        }
     }
     .subclass {
         animation: fadeIn 500ms ease-in forwards;
