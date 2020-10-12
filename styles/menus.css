@@ -64,6 +64,46 @@ header img {
   font-size: 1.7em;
 }
 
+#menu .subclass {
+  -webkit-animation: fadeIn 500ms ease-in forwards;
+          animation: fadeIn 500ms ease-in forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+#menu #plats {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+#menu #desserts {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
 #menu .subtitle {
   position: relative;
 }

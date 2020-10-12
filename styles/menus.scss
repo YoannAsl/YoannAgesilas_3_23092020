@@ -54,6 +54,25 @@ header {
     h2 {
         font-size: 1.7em;
     }
+    .subclass {
+        animation: fadeIn 500ms ease-in forwards;
+        opacity: 0;
+        @keyframes fadeIn {
+            0% {
+                transform: translate(0, 10px)
+            }
+            100% {
+                opacity: 100%;
+                transform: translate(0, 0)
+            }
+        }
+    }
+    #plats {
+        animation-delay: 250ms;
+    }
+    #desserts {
+        animation-delay: 500ms;
+    }
     .subtitle {
         position: relative;
     }
