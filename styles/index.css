@@ -303,4 +303,9 @@ footer {
 footer i {
   margin-right: 10px;
 }
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=index.css.map */

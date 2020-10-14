@@ -170,7 +170,23 @@ header img {
   padding: 15px 10% 12px 4%;
   -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+}
+
+#menu .menu_card .menu_card_text p {
+  margin: 0;
+  font-size: .9em;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #menu .menu_card .dish_name {
@@ -179,16 +195,15 @@ header img {
   margin-bottom: 2px;
 }
 
-#menu .menu_card p {
-  margin: 0;
-  font-size: .9em;
-}
-
 #menu .menu_card span {
   position: absolute;
   right: 5%;
   -webkit-transition: 1000ms;
   transition: 1000ms;
+}
+
+#menu .menu_card:hover span {
+  right: 80px;
 }
 
 #menu .menu_card .checkmark {
@@ -206,6 +221,8 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -217,10 +234,6 @@ header img {
 #menu .menu_card .checkmark i {
   font-size: 125%;
   color: white;
-}
-
-#menu .menu_card:hover span {
-  right: 80px;
 }
 
 #menu .menu_card:hover .checkmark {
@@ -259,5 +272,10 @@ footer {
 
 footer i {
   margin-right: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=menus.css.map */

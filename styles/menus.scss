@@ -117,20 +117,30 @@ header {
         border-radius: 15px;
         padding: 15px 10% 12px 4%;
         box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.1);
+        display: flex;
         position: relative;
+        .menu_card_text p {
+            margin: 0;
+            font-size: .9em;
+            // width: 277px;  //NE FONCTIONNE PAS
+            flex-shrink: 1;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .dish_name {
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 2px;
         }
-        p {
-            margin: 0;
-            font-size: .9em;
-        }
         span {
             position: absolute;
             right: 5%;
             transition: 1000ms;
+        }
+        &:hover span {
+            right: 80px;
         }
         .checkmark {
             position: absolute;
@@ -141,6 +151,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
             background-color: $cyan;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -150,9 +161,6 @@ header {
                 font-size: 125%;
                 color: white;
             }
-        }
-        &:hover span {
-            right: 80px;
         }
         &:hover .checkmark {
             width: 60px;
@@ -183,5 +191,9 @@ footer {
     padding: 26px 5% 36px 5%;
     i {
         margin-right: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
