@@ -101,6 +101,7 @@ header {
     }
     .subtitle {
         position: relative;
+        margin: 23px 0 24px 0;
     }
     .underline {
         position: absolute;
@@ -117,35 +118,49 @@ header {
         display: flex;
         justify-content: space-between;
         overflow: hidden;
+        margin-bottom: 14px;
+        font-size: .9em;
         .menu_card_text {
             margin: 15px 0 12px 4%;
             white-space: nowrap;
             overflow: hidden;
         }
+        .special {
+            white-space: normal;
+            max-width: 260px;
+        }
         .menu_card_text p {
             margin: 0;
-            font-size: .9em;
             overflow: hidden;
             text-overflow: ellipsis;
         }
         .dish_name {
-            font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin-bottom: 2px;
         }
-        .checkmark {
-            width: 0px;
+        .menu_card_slide {
+            position: relative;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $cyan;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            overflow: hidden;
-            transition: 1000ms;
-            i {
-                font-size: 125%;
-                color: white;
+            .price {
+                position: absolute;
+                bottom: 12px;
+                font-size: 1.1em;
+            }
+            .checkmark {
+                width: 0px;
+                margin-left: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $cyan;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                overflow: hidden;
+                transition: 1000ms;
+                i {
+                    font-size: 125%;
+                    color: white;
+                }
             }
         }
         &:hover .checkmark {
@@ -158,7 +173,8 @@ header {
     }
     button {
         height: 50px;
-        padding: 0 50px;
+        width: 50%;
+        margin: 50px 25% 0 25%;
         color: white;
         background: linear-gradient(170deg, $pink 20%, $purple 100%);
         border: none;
