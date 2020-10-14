@@ -1,19 +1,17 @@
+@import "./variables";
+
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 h2 {
     font-family: 'Shrikhand', cursive;
+    margin-top: 0;
+    font-weight: normal;
 }
-
-@import "./variables";
 
 .bold {
     font-weight: bold;
-}
-
-h2 {
-    margin-top: 0;
-    font-weight: normal;
 }
 
 body {
@@ -115,17 +113,18 @@ header {
     .menu_card {
         background-color: white;
         border-radius: 15px;
-        padding: 15px 10% 12px 4%;
         box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.1);
         display: flex;
-        position: relative;
+        justify-content: space-between;
+        overflow: hidden;
+        .menu_card_text {
+            margin: 15px 0 12px 4%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
         .menu_card_text p {
             margin: 0;
             font-size: .9em;
-            // width: 277px;  //NE FONCTIONNE PAS
-            flex-shrink: 1;
-            flex-grow: 1;
-            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -134,24 +133,11 @@ header {
             font-size: 1.1em;
             margin-bottom: 2px;
         }
-        span {
-            position: absolute;
-            right: 5%;
-            transition: 1000ms;
-        }
-        &:hover span {
-            right: 80px;
-        }
         .checkmark {
-            position: absolute;
-            right: 0;
-            top: 0;
-            height: 100%;
             width: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
             background-color: $cyan;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;

@@ -32,6 +32,9 @@ header img {
 }
 
 .loader {
+  position: absolute;
+  background-color: white;
+  background-size: 100%;
   border: 16px solid #f3f3f3;
   border-top: 16px solid #3498db;
   border-radius: 50%;
