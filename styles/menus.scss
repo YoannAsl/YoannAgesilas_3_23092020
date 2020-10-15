@@ -101,7 +101,7 @@ header {
     }
     .subtitle {
         position: relative;
-        margin: 23px 0 24px 0;
+        margin: 35px 0 24px 0;
     }
     .underline {
         position: absolute;
@@ -127,7 +127,6 @@ header {
         }
         .special {
             white-space: normal;
-            max-width: 260px;
         }
         .menu_card_text p {
             margin: 0;
@@ -141,14 +140,14 @@ header {
         .menu_card_slide {
             position: relative;
             display: flex;
+            margin-left: 30px;
             .price {
                 position: absolute;
                 bottom: 12px;
-                font-size: 1.1em;
             }
             .checkmark {
                 width: 0px;
-                margin-left: 50px;
+                margin-left: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
