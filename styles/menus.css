@@ -209,7 +209,7 @@ header img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 #menu .menu_card .menu_card_slide .price {
@@ -289,5 +289,76 @@ footer i {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  #menu h2 {
+    font-size: 1.5em;
+  }
+  #menu .menu_card p {
+    font-size: .8em;
+  }
+  #menu .menu_card .dish_name {
+    font-size: 1em;
+  }
+  #menu .menu_card .menu_card_slide .checkmark {
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 641px) {
+  #menu .cards_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #menu .menu_card {
+    width: 47%;
+  }
+  #menu .menu_card p {
+    font-size: 1em;
+  }
+  #menu .menu_card .dish_name {
+    font-size: 1.1em;
+  }
+  #menu .menu_card .menu_card_slide {
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #menu h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu .menu_card .dish_name {
+    font-size: 1.2em;
+  }
+  #menu .menu_card .menu_card_slide {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1281px) {
+  #menu .subclasses_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #menu .subclass {
+    width: 31%;
+  }
+  #menu .menu_card {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=menus.css.map */

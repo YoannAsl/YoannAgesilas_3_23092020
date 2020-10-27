@@ -258,7 +258,7 @@ footer {
     }
 }
 
-@media (min-width:641px) {
+@media (min-width: 641px) {
     #fonctionnement {
         .buttons_container {
             padding-left: 1%;
@@ -280,7 +280,7 @@ footer {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     #fonctionnement {
         .buttons_container {
             padding-left: .5%;
@@ -300,14 +300,13 @@ footer {
     #restaurants {
         .cards_container {
             .home_card {
-                // width: 30%;
                 margin-bottom: 25px;
             }
         }
     }
 }
 
-@media (min-width:1281px) {
+@media (min-width: 1281px) {
     #top_text {
         button {
             width: 25%;
