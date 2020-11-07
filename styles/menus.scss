@@ -1,6 +1,6 @@
 @import "./variables";
 
-* {
+:root, button {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -182,6 +182,7 @@ header {
         border: none;
         border-radius: 50px;
         box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2);
+        font-size: .95em;
         &:hover {
             background: linear-gradient(170deg, lighten($pink, 3%) 20%, lighten($purple, 3%) 100%);
             box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.2);
@@ -223,6 +224,9 @@ footer {
                     margin-left: 35px;
                 }
             }
+        }
+        button {
+            font-size: .85em;
         }
     }
 }
