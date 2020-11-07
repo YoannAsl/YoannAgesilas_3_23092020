@@ -205,7 +205,7 @@ header {
                 }
                 .heart_full {
                     display: none;
-                    background: linear-gradient($pink 10%, $purple 100%);
+                    background: linear-gradient($purple 20%, $pink 100%);
                     -webkit-background-clip: text;
                     color: transparent;
                     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ footer {
             padding-left: .5%;
             flex-direction: row;
             justify-content: space-between;
-            padding-left: 1%;
+            padding-left: 1.25%;
             button {
                 width: 30%;
                 margin: 0;
@@ -311,7 +311,7 @@ footer {
         .buttons_container {
             flex-direction: row;
             justify-content: space-between;
-            padding-left: 1%;
+            padding-left: .7%;
             button {
                 width: 30%;
                 margin: 0;

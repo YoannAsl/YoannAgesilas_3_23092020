@@ -315,8 +315,8 @@ header img {
 
 #restaurants .cards_container a .card_descr .heart_full {
   display: none;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da 10%, #9356dc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc 20%, #ff79da 100%);
   -webkit-background-clip: text;
   color: transparent;
   background-repeat: no-repeat;
@@ -411,7 +411,7 @@ footer a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 1%;
+    padding-left: 1.25%;
   }
   #fonctionnement .buttons_container button {
     width: 30%;
@@ -437,7 +437,7 @@ footer a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 1%;
+    padding-left: .7%;
   }
   #fonctionnement .buttons_container button {
     width: 30%;
