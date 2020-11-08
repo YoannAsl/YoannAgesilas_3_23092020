@@ -213,7 +213,7 @@ header {
                 .hearts_container:hover .heart_empty {
                     display: none;
                 }
-                .hearts_container:hover .heart_full, .hearts_container:hover .heart_full:before {
+                .hearts_container:hover .heart_full {
                     display: block;
                     animation: fillup 1250ms;
                     animation-fill-mode: forwards;
@@ -223,7 +223,7 @@ header {
                             background-position: 0 -100%;
                         }
                         100% {
-                            background-position: 0% 50%;
+                            background-position: 0% 40%;
                         }
                     }
                 }

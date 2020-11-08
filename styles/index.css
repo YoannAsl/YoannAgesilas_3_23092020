@@ -326,7 +326,7 @@ header img {
   display: none;
 }
 
-#restaurants .cards_container a .card_descr .hearts_container:hover .heart_full, #restaurants .cards_container a .card_descr .hearts_container:hover .heart_full:before {
+#restaurants .cards_container a .card_descr .hearts_container:hover .heart_full {
   display: block;
   -webkit-animation: fillup 1250ms;
           animation: fillup 1250ms;
@@ -340,7 +340,7 @@ header img {
     background-position: 0 -100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 40%;
   }
 }
 
@@ -349,7 +349,7 @@ header img {
     background-position: 0 -100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 40%;
   }
 }
 
